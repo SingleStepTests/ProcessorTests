@@ -1,6 +1,6 @@
 # 65816
 
-20,000 tests are provided per opcode; 10,000 in native mode and 10,000 in emulated modes. All tests assume a full 16mb of RAM is available to the processor.
+20,000 tests are provided per opcode; 10,000 in native mode and 10,000 in emulated mode. All tests assume a full 16mb of RAM is available to the processor and that the machine is using a single unified address space, ignoring M, X and E lines when addressing.
 
 Sample test:
 
