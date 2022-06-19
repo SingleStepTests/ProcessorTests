@@ -1,6 +1,6 @@
 # 65816
 
-20,000 tests are provided per opcode; 10,000 in native mode and 10,000 in emulated mode. All tests assume a full 16mb of RAM is available to the processor and that the machine is using a single unified address space, ignoring M, X and E lines when addressing.
+20,000 tests are provided per opcode; 10,000 in native mode and 10,000 in emulated mode. All tests assume a full 16mb of RAM is available to the processor and that the machine is using a single address space.
 
 Sample test:
 
@@ -58,13 +58,13 @@ Sample test:
 
 `cycles` provides a cycle-by-cycle breakdown of bus activity in the form `[address, value, outputs]` where output is a sequence of characters, in the order:
 
-* 'd' if VDA is active, otherwise '-';
-* 'p' if VPA is active, otherwise '-';
-* 'v' if VPB is active, otherwise '-';
-* 'r' if RWB signalled a read, otherwise 'w';
-* 'e' if E is active, otherwise '-';
-* 'm' if MX indicated M was active, otherwise '-';
-* ‘x' if MX indicated X was active, otherwise '-'; and
-* 'l' if MLB is active, otherwise '-'.
+* `d` if VDA is active, otherwise `-`;
+* `p` if VPA is active, otherwise `-`;
+* `v` if VPB is active, otherwise `-`;
+* `r` if RWB signalled a read, otherwise `w`;
+* `e` if E is active, otherwise `-`;
+* `m` if MX indicated M was active, otherwise `-`;
+* `x` if MX indicated X was active, otherwise `-`; and
+* `l` if MLB is active, otherwise `-`.
 
-So e.g. d--remx- means that VDA was active, VPA and VPB were inactive, RWB signalled a read, E, M and X were active and MLB was inactive.
+So e.g. `d--remx-` means that VDA was active, VPA and VPB were inactive, RWB signalled a read, E, M and X were active and MLB was inactive.
