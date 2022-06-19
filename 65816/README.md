@@ -43,10 +43,10 @@ Sample test:
     		]
     	},
     	"cycles": [
-    		[7284396, 61, "dp-remi-"],
-    		[7284397, 24, "-p-remi-"],
-    		[7284398, 187, "-p-remi-"],
-    		[1751932, 14, "d--remi-"]
+    		[7284396, 61, "dp-remx-"],
+    		[7284397, 24, "-p-remx-"],
+    		[7284398, 187, "-p-remx-"],
+    		[1751932, 14, "d--remx-"]
     	]
     }
 
@@ -67,4 +67,4 @@ Sample test:
 * ‘x' if MX indicated X was active, otherwise '-'; and
 * 'l' if MLB is active, otherwise '-'.
 
-So e.g. d--remi- means that VDA was active, VPA and VPB were inactive, RWB signalled a read, E, M and X were active and MLB was inactive.
+So e.g. d--remx- means that VDA was active, VPA and VPB were inactive, RWB signalled a read, E, M and X were active and MLB was inactive.
