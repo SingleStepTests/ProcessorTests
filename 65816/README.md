@@ -68,3 +68,5 @@ Sample test:
 * `l` if MLB is active, otherwise `-`.
 
 So e.g. `d--remx-` means that VDA was active, VPA and VPB were inactive, RWB signalled a read, E, M and X were active and MLB was inactive.
+
+The environment used does not activate RAM unless one of VDA, VPA or VPB is active, therefore affected bus transactions with the read line set do not produce a `value`. `null` is recorded in its place.
