@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+
+<script type="text/javascript" src="helpers/jszip/dist/jszip.js"></script>
+<script type="text/javascript" src="apu/spc700_test_generator.js"></script>
+<link rel="stylesheet" href="jsmoo.css">
+    <title>SPC700 cycle-accurate test generator</title>
+</head>
+
+<body>
+Seed to use:<input id="seed">
+<br>
+<button type="button" id="generate" onclick="generate_tests()">Generate and download tests</button>
+<br>
+<div id="statushere">Status of generating will go here...</div>
+</body>
+<script>
+    var seed_input;
+    window.onload = function() {
+        seed_input = document.getElementById('seed');
+        seed_input.value = "apples and oranges";
+    }
+
+    class dct {
+        constructor() {
+            this.el = document.getElementById('statushere');
+        }
+
+        addl(order, what) {
+            console.log('LOG:', what);
+            this.el.innerHTML = what;
+        }
+    }
+    dconsole = new dct();
+
+    function generate_tests() {
+        let seed = seed_input.value;
+        if (seed.length < 1) {
+            alert('Please use a seed!');
+            return;
+        }
+        generate_SPC700_test_test(seed);
+    }
+</script>
