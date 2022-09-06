@@ -9,62 +9,63 @@ Further:
 Sample test:
 
 	{
-		"name": "e376 [ROXL.w D1, D6] 4",
+		"name": "e3ae [LSL.l D1, D6] 5",
 		"initial": {
-			"d0": 2597437614,
-			"d1": 1859225450,
-			"d2": 1340472931,
-			"d3": 3065853194,
-			"d4": 3963669262,
-			"d5": 1016844446,
-			"d6": 3985174945,
-			"d7": 78238491,
-			"a0": 3380616222,
-			"a1": 85315585,
-			"a2": 1212848964,
-			"a3": 1212222308,
-			"a4": 1291036887,
-			"a5": 327682288,
-			"a6": 2186860863,
-			"usp": 355803596,
-			"ssp": 2048,
-			"sr": 9998,
-			"pc": 3072,
-			"prefetch": [58230, 38270],
-			"ram": [
-				[3077, 58],
-				[3076, 150]
-			]
+		"d0": 727447539,
+		"d1": 123414203,
+		"d2": 2116184600,
+		"d3": 613751030,
+		"d4": 3491619782,
+		"d5": 3327815506,
+		"d6": 2480544920,
+		"d7": 2492542949,
+		"a0": 2379291595,
+		"a1": 1170063127,
+		"a2": 3877821425,
+		"a3": 480834161,
+		"a4": 998208767,
+		"a5": 2493287663,
+		"a6": 1026412676,
+		"usp": 1546990282,
+		"ssp": 2048,
+		"sr": 9994,
+		"pc": 3072,
+		"prefetch": [58286, 50941],
+		"ram": [
+			[3077, 34],
+			[3076, 42]
+		]
 		},
 		"final": {
-			"d0": 2597437614,
-			"d1": 1859225450,
-			"d2": 1340472931,
-			"d3": 3065853194,
-			"d4": 3963669262,
-			"d5": 1016844446,
-			"d6": 3985154424,
-			"d7": 78238491,
-			"a0": 3380616222,
-			"a1": 85315585,
-			"a2": 1212848964,
-			"a3": 1212222308,
-			"a4": 1291036887,
-			"a5": 327682288,
-			"a6": 2186860863,
-			"usp": 355803596,
+			"d0": 727447539,
+			"d1": 123414203,
+			"d2": 2116184600,
+			"d3": 613751030,
+			"d4": 3491619782,
+			"d5": 3327815506,
+			"d6": 0,
+			"d7": 2492542949,
+			"a0": 2379291595,
+			"a1": 1170063127,
+			"a2": 3877821425,
+			"a3": 480834161,
+			"a4": 998208767,
+			"a5": 2493287663,
+			"a6": 1026412676,
+			"usp": 1546990282,
 			"ssp": 2048,
-			"sr": 10009,
+			"sr": 9988,
 			"pc": 3074,
-			"prefetch": [38270, 38458],
+			"prefetch": [50941, 10786],
 			"ram": [
-				[3077, 58],
-				[3076, 150]
+				[3077, 34],
+				[3076, 42]
 			]
 		},
-		"length": 4,
+		"length": 126,
 		"transactions": [
-			["r", 4, 6, 3076, ".w", 38458]
+			["r", 4, 6, 3076, ".w", 10786],
+			["n", 122]
 		]
 	}
 
@@ -85,14 +86,14 @@ Sample test:
 `length` provides the total number of cycles spent in this instruction.
 
 `transactions` provides a list of bus transactions that occurred during execution, in one of two forms:
-* `["n", 123]` indicates an idle bus for a duration of 123 cycles;
-* `["r", 4, 6, 3076, ".w", 38458]` indicates:
-  * `"r"` indicates that the cycle was a read. Other options are `"w"` for a write, or `"t"` for a TAS atomic read-modify-write;
+* `["n", 122]` indicates an idle bus for a duration of 122 cycles;
+* `["r", 4, 6, 3076, ".w", 10786]` indicates:
+  * `"r"` indicates that the cycle was a read. Other options are `"w"` for a write, or `"t"` for a TAS indivisible read-modify-write;
   * `4` is the length in cycles of the transaction;
   * `6` is the posted function code for this transaction — bit 0 is FC0, bit 1 is FC1 and bit 2 is FC2;
   * `3072` is the address posted for this operation;
   * `".w"` indicates that this was a word access. The alternative is `".b"` for a byte access; and
-  * `38458` is the value on the data bus during the transaction.
+  * `10786` is the value on the data bus during the transaction. If it was a TAS cycle, it is the final value as written; before and after can be verified via before-and-after RAM state.
 
 All cycle counts assume an immediate DTACK.
 	
