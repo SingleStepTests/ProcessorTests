@@ -21,5 +21,6 @@ As a corollary: please report any discrepancies uncovered, either as an issue or
 
 ## Other Test Sets
 
-For the work of other authors to produce the same substance of test cases, see:
-* https://github.com/adtennant/gameboy-test-data for the Game Boy.
+For similar test sets from other, see:
+* https://github.com/adtennant/gameboy-test-data for the Game Boy; and
+* https://github.com/raddad772/jsmoo/tree/main/misc/tests/GeneratedTests for the Z80, and a separate instance of the SPC 700 tests contributed here.
