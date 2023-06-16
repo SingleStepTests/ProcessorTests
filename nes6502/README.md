@@ -2,7 +2,7 @@
 
 The NES 6502 is a version of the 6502 that ignores the state of the decimal flag when performing arithmetic.
 
-10,000 tests are provided per opcode. All tests assume a full 64kb of RAM is mapped to the processor.
+10,000 tests are provided per opcode. All tests assume a full 64kb of uniquely-mapped RAM is mapped to the processor; **this deviates from the actual memory layout of a NES** regardless of the cartridge in use.
 
 Sample test:
 
