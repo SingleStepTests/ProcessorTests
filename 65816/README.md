@@ -8,7 +8,7 @@ Sample test:
     	"name": "3d e 1",
     	"initial": {
     		"pc": 9900,
-    		"s": 191,
+    		"s": 2191,
     		"p": 171,
     		"a": 25345,
     		"x": 100,
@@ -26,7 +26,7 @@ Sample test:
     	},
     	"final": {
     		"pc": 9903,
-    		"s": 191,
+    		"s": 2191,
     		"p": 43,
     		"a": 25344,
     		"x": 100,
@@ -70,3 +70,5 @@ Sample test:
 So e.g. `d--remx-` means that VDA was active, VPA and VPB were inactive, RWB signalled a read, E, M and X were active and MLB was inactive.
 
 The environment used does not activate RAM unless one of VDA, VPA or VPB is active, therefore affected bus transactions with the read line set do not produce a `value`. `null` is recorded in its place.
+
+**S in emulation mode**: as best as the author can determine, S remains a full 16-bit quantity in emulation mode and is subject to 16-bit increments and decrements. It is therefore recorded as a 16-bit quantity even for those instructions that force accesses into page 1.
