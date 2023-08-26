@@ -172,7 +172,7 @@ An opcode marked 'undocumented' has well-defined and potentially useful behavior
 An opcode marked 'undefined' likely has unusual or unpredictable behavior.
 An opcode marked 'fpu' is an FPU instruction.
 
-If present, the 'flags' field indicates which flags are undefined after the instruction has executed. A flag is either a letter from the pattern `odiszapc` indicating it is undefined, or a period, indicating it is not undefined.
+If present, the 'flags' field indicates which flags are undefined after the instruction has executed. A flag is either a letter from the pattern `odiszapc` indicating it is undefined, or a period, indicating it is not undefined. The 'flags-mask' field is a 16 bit value that can be applied with an AND to the flags register after instruction execution to clear any flags left undefined.
 
 An opcode may have a 'reg' field which will be an object of opcode extensions/register specifiers represented by single digit string keys - this is the 'reg' field of the modrm byte.  Certain opcodes may be defined or undefined depending on their register specifier or opcode extension. Therefore, each entry within this 'reg' object will have the same fields as a top-level opcode object. 
 
