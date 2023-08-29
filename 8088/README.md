@@ -160,6 +160,14 @@ If you are not interested in writing a cycle-accurate emulator, you may only be 
 
 Note that these tests include many undocumented or invalid opcodes. The 8088 has no concept of an invalid instruction, and will perform some task for any provided sequence of instruction bytes. Additionally, flags may be changed by documented instructions in ways that are officially undefined.
 
+### Per-Instruction Notes
+
+8F: The behavior of 8F with reg != 0 is undefined. If you can figure out the rules governing its behavior, please let us know.
+9B: WAIT is not included in this test set.
+8D/C4/C5: 'r, r' forms of LEA, LES, LDS are undefined. These forms are not included in this test set as their behavior requires access to the previously calculated Effective Address which is not available.
+F1: This is listed as an undefined instruction by many sources, but I believe it is an unused prefix.
+F4: HALT is not included in this test set.
+
 ### 8088.json
 
 If you are not interested in emulating the undefined behavior of the 8088, you can use the included 8088.json file which lists which instructions are undocumented or undefined and provides values that can be used to mask undefined flags.
