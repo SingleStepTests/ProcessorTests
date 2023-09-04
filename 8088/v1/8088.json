@@ -1,0 +1,1297 @@
+{
+  "00": {
+    "status": "normal"
+  },
+  "01": {
+    "status": "normal"
+  },
+  "02": {
+    "status": "normal"
+  },
+  "03": {
+    "status": "normal"
+  },
+  "04": {
+    "status": "normal"
+  },
+  "05": {
+    "status": "normal"
+  },
+  "06": {
+    "status": "normal"
+  },
+  "07": {
+    "status": "normal"
+  },
+  "08": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "09": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "0A": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "0B": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "0C": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "0D": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "0E": {
+    "status": "normal"
+  },
+  "0F": {
+    "status": "normal"
+  },
+  "10": {
+    "status": "normal"
+  },
+  "11": {
+    "status": "normal"
+  },
+  "12": {
+    "status": "normal"
+  },
+  "13": {
+    "status": "normal"
+  },
+  "14": {
+    "status": "normal"
+  },
+  "15": {
+    "status": "normal"
+  },
+  "16": {
+    "status": "normal"
+  },
+  "17": {
+    "status": "normal"
+  },
+  "18": {
+    "status": "normal"
+  },
+  "19": {
+    "status": "normal"
+  },
+  "1A": {
+    "status": "normal"
+  },
+  "1B": {
+    "status": "normal"
+  },
+  "1C": {
+    "status": "normal"
+  },
+  "1D": {
+    "status": "normal"
+  },
+  "1E": {
+    "status": "normal"
+  },
+  "1F": {
+    "status": "normal"
+  },
+  "20": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "21": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "22": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "23": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "24": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "25": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "26": {
+    "status": "prefix"
+  },
+  "27": {
+    "status": "normal",
+    "flags": "o.......",
+    "flags-mask": 63487
+  },
+  "28": {
+    "status": "normal"
+  },
+  "29": {
+    "status": "normal"
+  },
+  "2A": {
+    "status": "normal"
+  },
+  "2B": {
+    "status": "normal"
+  },
+  "2C": {
+    "status": "normal"
+  },
+  "2D": {
+    "status": "normal"
+  },
+  "2E": {
+    "status": "prefix"
+  },
+  "2F": {
+    "status": "normal",
+    "flags": "o.......",
+    "flags-mask": 63487
+  },
+  "30": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "31": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "32": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "33": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "34": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "35": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "36": {
+    "status": "prefix"
+  },
+  "37": {
+    "status": "normal",
+    "flags": "o..sz.p.",
+    "flags-mask": 63291
+  },
+  "38": {
+    "status": "normal"
+  },
+  "39": {
+    "status": "normal"
+  },
+  "3A": {
+    "status": "normal"
+  },
+  "3B": {
+    "status": "normal"
+  },
+  "3C": {
+    "status": "normal"
+  },
+  "3D": {
+    "status": "normal"
+  },
+  "3E": {
+    "status": "prefix"
+  },
+  "3F": {
+    "status": "normal",
+    "flags": "o..sz.p.",
+    "flags-mask": 63291
+  },
+  "40": {
+    "status": "normal"
+  },
+  "41": {
+    "status": "normal"
+  },
+  "42": {
+    "status": "normal"
+  },
+  "43": {
+    "status": "normal"
+  },
+  "44": {
+    "status": "normal"
+  },
+  "45": {
+    "status": "normal"
+  },
+  "46": {
+    "status": "normal"
+  },
+  "47": {
+    "status": "normal"
+  },
+  "48": {
+    "status": "normal"
+  },
+  "49": {
+    "status": "normal"
+  },
+  "4A": {
+    "status": "normal"
+  },
+  "4B": {
+    "status": "normal"
+  },
+  "4C": {
+    "status": "normal"
+  },
+  "4D": {
+    "status": "normal"
+  },
+  "4E": {
+    "status": "normal"
+  },
+  "4F": {
+    "status": "normal"
+  },
+  "50": {
+    "status": "normal"
+  },
+  "51": {
+    "status": "normal"
+  },
+  "52": {
+    "status": "normal"
+  },
+  "53": {
+    "status": "normal"
+  },
+  "54": {
+    "status": "normal"
+  },
+  "55": {
+    "status": "normal"
+  },
+  "56": {
+    "status": "normal"
+  },
+  "57": {
+    "status": "normal"
+  },
+  "58": {
+    "status": "normal"
+  },
+  "59": {
+    "status": "normal"
+  },
+  "5A": {
+    "status": "normal"
+  },
+  "5B": {
+    "status": "normal"
+  },
+  "5C": {
+    "status": "normal"
+  },
+  "5D": {
+    "status": "normal"
+  },
+  "5E": {
+    "status": "normal"
+  },
+  "5F": {
+    "status": "normal"
+  },
+  "60": {
+    "status": "alias"
+  },
+  "61": {
+    "status": "alias"
+  },
+  "62": {
+    "status": "alias"
+  },
+  "63": {
+    "status": "alias"
+  },
+  "64": {
+    "status": "alias"
+  },
+  "65": {
+    "status": "alias"
+  },
+  "66": {
+    "status": "alias"
+  },
+  "67": {
+    "status": "alias"
+  },
+  "68": {
+    "status": "alias"
+  },
+  "69": {
+    "status": "alias"
+  },
+  "6A": {
+    "status": "alias"
+  },
+  "6B": {
+    "status": "alias"
+  },
+  "6C": {
+    "status": "alias"
+  },
+  "6D": {
+    "status": "alias"
+  },
+  "6E": {
+    "status": "alias"
+  },
+  "6F": {
+    "status": "alias"
+  },
+  "70": {
+    "status": "normal"
+  },
+  "71": {
+    "status": "normal"
+  },
+  "72": {
+    "status": "normal"
+  },
+  "73": {
+    "status": "normal"
+  },
+  "74": {
+    "status": "normal"
+  },
+  "75": {
+    "status": "normal"
+  },
+  "76": {
+    "status": "normal"
+  },
+  "77": {
+    "status": "normal"
+  },
+  "78": {
+    "status": "normal"
+  },
+  "79": {
+    "status": "normal"
+  },
+  "7A": {
+    "status": "normal"
+  },
+  "7B": {
+    "status": "normal"
+  },
+  "7C": {
+    "status": "normal"
+  },
+  "7D": {
+    "status": "normal"
+  },
+  "7E": {
+    "status": "normal"
+  },
+  "7F": {
+    "status": "normal"
+  },
+  "80": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "2": {
+        "status": "normal"
+      },
+      "3": {
+        "status": "normal"
+      },
+      "4": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "5": {
+        "status": "normal"
+      },
+      "6": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "7": {
+        "status": "normal"
+      }
+    }
+  },
+  "81": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "2": {
+        "status": "normal"
+      },
+      "3": {
+        "status": "normal"
+      },
+      "4": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "5": {
+        "status": "normal"
+      },
+      "6": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "7": {
+        "status": "normal"
+      }
+    }
+  },
+  "82": {
+    "reg": {
+      "0": {
+        "status": "alias"
+      },
+      "1": {
+        "status": "alias",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "2": {
+        "status": "alias"
+      },
+      "3": {
+        "status": "alias"
+      },
+      "4": {
+        "status": "alias",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "5": {
+        "status": "alias"
+      },
+      "6": {
+        "status": "alias",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "7": {
+        "status": "alias"
+      }
+    }
+  },
+  "83": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "2": {
+        "status": "normal"
+      },
+      "3": {
+        "status": "normal"
+      },
+      "4": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "5": {
+        "status": "normal"
+      },
+      "6": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "7": {
+        "status": "normal"
+      }
+    }
+  },
+  "84": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "85": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "86": {
+    "status": "normal"
+  },
+  "87": {
+    "status": "normal"
+  },
+  "88": {
+    "status": "normal"
+  },
+  "89": {
+    "status": "normal"
+  },
+  "8A": {
+    "status": "normal"
+  },
+  "8B": {
+    "status": "normal"
+  },
+  "8C": {
+    "status": "normal"
+  },
+  "8D": {
+    "status": "normal"
+  },
+  "8E": {
+    "status": "normal"
+  },
+  "8F": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "undefined"
+      },
+      "2": {
+        "status": "undefined"
+      },
+      "3": {
+        "status": "undefined"
+      },
+      "4": {
+        "status": "undefined"
+      },
+      "5": {
+        "status": "undefined"
+      },
+      "6": {
+        "status": "undefined"
+      },
+      "7": {
+        "status": "undefined"
+      }
+    }
+  },
+  "90": {
+    "status": "normal"
+  },
+  "91": {
+    "status": "normal"
+  },
+  "92": {
+    "status": "normal"
+  },
+  "93": {
+    "status": "normal"
+  },
+  "94": {
+    "status": "normal"
+  },
+  "95": {
+    "status": "normal"
+  },
+  "96": {
+    "status": "normal"
+  },
+  "97": {
+    "status": "normal"
+  },
+  "98": {
+    "status": "normal"
+  },
+  "99": {
+    "status": "normal"
+  },
+  "9A": {
+    "status": "normal"
+  },
+  "9B": {
+    "status": "normal"
+  },
+  "9C": {
+    "status": "normal"
+  },
+  "9D": {
+    "status": "normal"
+  },
+  "9E": {
+    "status": "normal"
+  },
+  "9F": {
+    "status": "normal"
+  },
+  "A0": {
+    "status": "normal"
+  },
+  "A1": {
+    "status": "normal"
+  },
+  "A2": {
+    "status": "normal"
+  },
+  "A3": {
+    "status": "normal"
+  },
+  "A4": {
+    "status": "normal"
+  },
+  "A5": {
+    "status": "normal"
+  },
+  "A6": {
+    "status": "normal"
+  },
+  "A7": {
+    "status": "normal"
+  },
+  "A8": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "A9": {
+    "status": "normal",
+    "flags": ".....a..",
+    "flags-mask": 65519
+  },
+  "AA": {
+    "status": "normal"
+  },
+  "AB": {
+    "status": "normal"
+  },
+  "AC": {
+    "status": "normal"
+  },
+  "AD": {
+    "status": "normal"
+  },
+  "AE": {
+    "status": "normal"
+  },
+  "AF": {
+    "status": "normal"
+  },
+  "B0": {
+    "status": "normal"
+  },
+  "B1": {
+    "status": "normal"
+  },
+  "B2": {
+    "status": "normal"
+  },
+  "B3": {
+    "status": "normal"
+  },
+  "B4": {
+    "status": "normal"
+  },
+  "B5": {
+    "status": "normal"
+  },
+  "B6": {
+    "status": "normal"
+  },
+  "B7": {
+    "status": "normal"
+  },
+  "B8": {
+    "status": "normal"
+  },
+  "B9": {
+    "status": "normal"
+  },
+  "BA": {
+    "status": "normal"
+  },
+  "BB": {
+    "status": "normal"
+  },
+  "BC": {
+    "status": "normal"
+  },
+  "BD": {
+    "status": "normal"
+  },
+  "BE": {
+    "status": "normal"
+  },
+  "BF": {
+    "status": "normal"
+  },
+  "C0": {
+    "status": "alias"
+  },
+  "C1": {
+    "status": "alias"
+  },
+  "C2": {
+    "status": "normal"
+  },
+  "C3": {
+    "status": "normal"
+  },
+  "C4": {
+    "status": "normal"
+  },
+  "C5": {
+    "status": "normal"
+  },
+  "C6": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "undefined"
+      },
+      "2": {
+        "status": "undefined"
+      },
+      "3": {
+        "status": "undefined"
+      },
+      "4": {
+        "status": "undefined"
+      },
+      "5": {
+        "status": "undefined"
+      },
+      "6": {
+        "status": "undefined"
+      },
+      "7": {
+        "status": "undefined"
+      }
+    }
+  },
+  "C7": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "undefined"
+      },
+      "2": {
+        "status": "undefined"
+      },
+      "3": {
+        "status": "undefined"
+      },
+      "4": {
+        "status": "undefined"
+      },
+      "5": {
+        "status": "undefined"
+      },
+      "6": {
+        "status": "undefined"
+      },
+      "7": {
+        "status": "undefined"
+      }
+    }
+  },
+  "C8": {
+    "status": "alias"
+  },
+  "C9": {
+    "status": "alias"
+  },
+  "CA": {
+    "status": "normal"
+  },
+  "CB": {
+    "status": "normal"
+  },
+  "CC": {
+    "status": "normal"
+  },
+  "CD": {
+    "status": "normal"
+  },
+  "CE": {
+    "status": "normal"
+  },
+  "CF": {
+    "status": "normal"
+  },
+  "D0": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "normal"
+      },
+      "2": {
+        "status": "normal"
+      },
+      "3": {
+        "status": "normal"
+      },
+      "4": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "5": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "6": {
+        "status": "undocumented",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "7": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      }
+    }
+  },
+  "D1": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "normal"
+      },
+      "2": {
+        "status": "normal"
+      },
+      "3": {
+        "status": "normal"
+      },
+      "4": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "5": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "6": {
+        "status": "undocumented",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "7": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      }
+    }
+  },
+  "D2": {
+    "reg": {
+      "0": {
+        "status": "normal",
+        "flags": "o.......",
+        "flags-mask": 63487
+      },
+      "1": {
+        "status": "normal",
+        "flags": "o.......",
+        "flags-mask": 63487
+      },
+      "2": {
+        "status": "normal",
+        "flags": "o.......",
+        "flags-mask": 63487
+      },
+      "3": {
+        "status": "normal",
+        "flags": "o.......",
+        "flags-mask": 63487
+      },
+      "4": {
+        "status": "normal",
+        "flags": "o....a.c",
+        "flags-mask": 63470
+      },
+      "5": {
+        "status": "normal",
+        "flags": "o....a.c",
+        "flags-mask": 63470
+      },
+      "6": {
+        "status": "undocumented",
+        "flags": "o....a.c",
+        "flags-mask": 63470
+      },
+      "7": {
+        "status": "normal",
+        "flags": "o....a.c",
+        "flags-mask": 63470
+      }
+    }
+  },
+  "D3": {
+    "reg": {
+      "0": {
+        "status": "normal",
+        "flags": "o.......",
+        "flags-mask": 63487
+      },
+      "1": {
+        "status": "normal",
+        "flags": "o.......",
+        "flags-mask": 63487
+      },
+      "2": {
+        "status": "normal",
+        "flags": "o.......",
+        "flags-mask": 63487
+      },
+      "3": {
+        "status": "normal",
+        "flags": "o.......",
+        "flags-mask": 63487
+      },
+      "4": {
+        "status": "normal",
+        "flags": "o....a.c",
+        "flags-mask": 63470
+      },
+      "5": {
+        "status": "normal",
+        "flags": "o....a.c",
+        "flags-mask": 63470
+      },
+      "6": {
+        "status": "undocumented",
+        "flags": "o....a.c",
+        "flags-mask": 63470
+      },
+      "7": {
+        "status": "normal",
+        "flags": "o....a.c",
+        "flags-mask": 63470
+      }
+    }
+  },
+  "D4": {
+    "status": "normal",
+    "flags": "o....a.c",
+    "flags-mask": 63470
+  },
+  "D5": {
+    "status": "normal",
+    "flags": "o....a.c",
+    "flags-mask": 63470
+  },
+  "D6": {
+    "status": "undocumented"
+  },
+  "D7": {
+    "status": "normal"
+  },
+  "D8": {
+    "status": "fpu"
+  },
+  "D9": {
+    "status": "fpu"
+  },
+  "DA": {
+    "status": "fpu"
+  },
+  "DB": {
+    "status": "fpu"
+  },
+  "DC": {
+    "status": "fpu"
+  },
+  "DD": {
+    "status": "fpu"
+  },
+  "DE": {
+    "status": "fpu"
+  },
+  "DF": {
+    "status": "fpu"
+  },
+  "E0": {
+    "status": "normal"
+  },
+  "E1": {
+    "status": "normal"
+  },
+  "E2": {
+    "status": "normal"
+  },
+  "E3": {
+    "status": "normal"
+  },
+  "E4": {
+    "status": "normal"
+  },
+  "E5": {
+    "status": "normal"
+  },
+  "E6": {
+    "status": "normal"
+  },
+  "E7": {
+    "status": "normal"
+  },
+  "E8": {
+    "status": "normal"
+  },
+  "E9": {
+    "status": "normal"
+  },
+  "EA": {
+    "status": "normal"
+  },
+  "EB": {
+    "status": "normal"
+  },
+  "EC": {
+    "status": "normal"
+  },
+  "ED": {
+    "status": "normal"
+  },
+  "EE": {
+    "status": "normal"
+  },
+  "EF": {
+    "status": "normal"
+  },
+  "F0": {
+    "status": "prefix"
+  },
+  "F1": {
+    "status": "prefix"
+  },
+  "F2": {
+    "status": "prefix"
+  },
+  "F3": {
+    "status": "prefix"
+  },
+  "F4": {
+    "status": "normal"
+  },
+  "F5": {
+    "status": "normal"
+  },
+  "F6": {
+    "reg": {
+      "0": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "1": {
+        "status": "alias",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "2": {
+        "status": "normal"
+      },
+      "3": {
+        "status": "normal"
+      },
+      "4": {
+        "status": "normal",
+        "flags": "...szap.",
+        "flags-mask": 65323
+      },
+      "5": {
+        "status": "normal",
+        "flags": "...szap.",
+        "flags-mask": 65323
+      },
+      "6": {
+        "status": "normal",
+        "flags": "o..szapc",
+        "flags-mask": 63274
+      },
+      "7": {
+        "status": "normal",
+        "flags": "o..szapc",
+        "flags-mask": 63274
+      }
+    }
+  },
+  "F7": {
+    "reg": {
+      "0": {
+        "status": "normal",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "1": {
+        "status": "alias",
+        "flags": ".....a..",
+        "flags-mask": 65519
+      },
+      "2": {
+        "status": "normal"
+      },
+      "3": {
+        "status": "normal"
+      },
+      "4": {
+        "status": "normal",
+        "flags": "...szap.",
+        "flags-mask": 65323
+      },
+      "5": {
+        "status": "normal",
+        "flags": "...szap.",
+        "flags-mask": 65323
+      },
+      "6": {
+        "status": "normal",
+        "flags": "o..szapc",
+        "flags-mask": 63274
+      },
+      "7": {
+        "status": "normal",
+        "flags": "o..szapc",
+        "flags-mask": 63274
+      }
+    }
+  },
+  "F8": {
+    "status": "normal"
+  },
+  "F9": {
+    "status": "normal"
+  },
+  "FA": {
+    "status": "normal"
+  },
+  "FB": {
+    "status": "normal"
+  },
+  "FC": {
+    "status": "normal"
+  },
+  "FD": {
+    "status": "normal"
+  },
+  "FE": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "normal"
+      },
+      "2": {
+        "status": "undefined"
+      },
+      "3": {
+        "status": "undefined"
+      },
+      "4": {
+        "status": "undefined"
+      },
+      "5": {
+        "status": "undefined"
+      },
+      "6": {
+        "status": "undefined"
+      },
+      "7": {
+        "status": "undefined"
+      }
+    }
+  },
+  "FF": {
+    "reg": {
+      "0": {
+        "status": "normal"
+      },
+      "1": {
+        "status": "normal"
+      },
+      "2": {
+        "status": "normal"
+      },
+      "3": {
+        "status": "normal"
+      },
+      "4": {
+        "status": "normal"
+      },
+      "5": {
+        "status": "normal"
+      },
+      "6": {
+        "status": "normal"
+      },
+      "7": {
+        "status": "alias"
+      }
+    }
+  }
+}
