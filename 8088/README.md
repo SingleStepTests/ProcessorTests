@@ -165,14 +165,17 @@ Note that these tests include many undocumented or invalid opcodes. The 8088 has
 
 ### Per-Instruction Notes
 
-8F: The behavior of 8F with reg != 0 is undefined. If you can figure out the rules governing its behavior, please let us know.
-9B: WAIT is not included in this test set.
-8D/C4/C5: 'r, r' forms of LEA, LES, LDS are undefined. These forms are not included in this test set as their behavior requires access to the previously calculated Effective Address which is not available.
-A4-A7/AA-AF: CX is masked to 7 bits. This provides a reasonable test length, as the full 65535 value in CX would result in over 1 million cycles.
-D2/D3: CL is masked to 6 bits. This shortens the possible test length, while still hopefully catching the case where CL is improperly masked to 5 bits (186+ behavior)
-F1: This is listed as an undefined instruction by many sources, but I believe it is an unused prefix.
-F4: HALT is not included in this test set.
-
+ - **8F**: The behavior of 8F with reg != 0 is undefined. If you can figure out the rules governing its behavior, please let us know.
+ - **9B**: WAIT is not included in this test set.
+ - **8D,C4,C5**: 'r, r' forms of LEA, LES, LDS are undefined. These forms are not included in this test set as their behavior requires access to the previously calculated Effective Address which is not available.
+ - **A4-A7,AA-AF**: CX is masked to 7 bits. This provides a reasonable test length, as the full 65535 value in CX would result in over 1 million cycles.
+ - **D2,D3**: CL is masked to 6 bits. This shortens the possible test length, while still hopefully catching the case where CL is improperly masked to 5 bits (186+ behavior)
+ - **E4,E5,EC,ED**: All forms of the IN instruction should return 0xFF on IO read.
+ - **F1**: This is listed as an undefined instruction by many sources, but I believe it is an unused prefix.
+ - **F4**: HALT is not included in this test set.
+ - **D4, F6.6, F6,7, F7.6, F7.7** - These instructions can generate divide exceptions. The IVT entry for INT0 is set up to point to 1024. 
+ - **FE**: The forms with reg field 2-7 are undefined and are not included in this initial release.
+ 
 ### 8088.json
 
 If you are not interested in emulating the undefined behavior of the 8088, you can use the included 8088.json file which lists which instructions are undocumented or undefined and provides values that can be used to mask undefined flags.
