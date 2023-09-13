@@ -161,19 +161,22 @@ For more information on the 8088 and 8288 status lines, see their respective whi
 
 If you are not interested in writing a cycle-accurate emulator, you may only be interested in the final register and ram state.
 
-Note that these tests include many undocumented or invalid opcodes. The 8088 has no concept of an invalid instruction, and will perform some task for any provided sequence of instruction bytes. Additionally, flags may be changed by documented instructions in ways that are officially undefined.
+Note that these tests include many undocumented/undefined opcodes. The 8088 has no concept of an invalid instruction, and will perform some task for any provided sequence of instruction bytes. Additionally, flags may be changed by documented instructions in ways that are officially undefined.
 
 ### Per-Instruction Notes
 
  - **8F**: The behavior of 8F with reg != 0 is undefined. If you can figure out the rules governing its behavior, please let us know.
  - **9B**: WAIT is not included in this test set.
- - **8D,C4,C5**: 'r, r' forms of LEA, LES, LDS are undefined. These forms are not included in this test set as their behavior requires access to the previously calculated Effective Address which is not available.
- - **A4-A7,AA-AF**: CX is masked to 7 bits. This provides a reasonable test length, as the full 65535 value in CX would result in over 1 million cycles.
- - **D2,D3**: CL is masked to 6 bits. This shortens the possible test length, while still hopefully catching the case where CL is improperly masked to 5 bits (186+ behavior)
+ - **8C,8E**: These instructions are only defined for a reg value of 0-3, however only the first two bits are checked, so the test set contains random values for reg.
+ - **8D,C4,C5**: 'r, r' forms of LEA, LES, LDS are undefined. These forms are not included in this test set due to disruption of the last calculated EA by the CPU set up routine.
+ - **A4-A7,AA-AF**: CX is masked to 7 bits. This provides a reasonable test length, as the full 65535 value in CX with a REP prefix could result in over one million cycles.
+ - **C6,C7**: Although the reg != 0 forms of these instructions are officially undefined, this field is ignored. Therefore, the test set contains random values for reg.
+ - **D2,D3**: CL is masked to 6 bits. This shortens the possible test length, while still hopefully catching the case where CL is improperly masked to 5 bits (186+ behavior).
  - **E4,E5,EC,ED**: All forms of the IN instruction should return 0xFF on IO read.
- - **F1**: This is listed as an undefined instruction by many sources, but I believe it is an unused prefix.
+ - **F0, F1**: The LOCK prefix is not exercised in this test set.
  - **F4**: HALT is not included in this test set.
- - **D4, F6.6, F6,7, F7.6, F7.7** - These instructions can generate divide exceptions. The IVT entry for INT0 is set up to point to 1024. 
+ - **D4, F6.6, F6.7, F7.6, F7.7** - These instructions can generate divide exceptions. When this occurs, cycle traces continue until the first byte of the exception handler is fetched and read from the queue. The IVT entry for INT0 is set up to point to 1024 (0400h).
+ - **F6.7, F7.7** - Presence of a REP prefix preceding IDIV will invert the sign of the quotient, therefore REP prefixes are prepended to 10% of IDIV tests. This was only recently discovered by reenigne.
  - **FE**: The forms with reg field 2-7 are undefined and are not included in this initial release.
  
 ### 8088.json
@@ -186,9 +189,9 @@ An opcode marked 'prefix' is an instruction prefix.
 An opcode marked 'alias' is simply an alias for another instruction. These exist because the mask that determines which microcode maps to which opcode is not always perfectly specific. 
 An opcode marked 'undocumented' has well-defined and potentially useful behavior, such as SETMO and SETMOC. 
 An opcode marked 'undefined' likely has unusual or unpredictable behavior.
-An opcode marked 'fpu' is an FPU instruction.
+An opcode marked 'fpu' is an FPU instruction (ESC opcode).
 
-If present, the 'flags' field indicates which flags are undefined after the instruction has executed. A flag is either a letter from the pattern `odiszapc` indicating it is undefined, or a period, indicating it is not undefined. The 'flags-mask' field is a 16 bit value that can be applied with an AND to the flags register after instruction execution to clear any flags left undefined.
+If present, the 'flags' field indicates which flags are undefined after the instruction has executed. A flag is either a letter from the pattern `odiszapc` indicating it is undefined, or a period, indicating it is defined. The 'flags-mask' field is a 16 bit value that can be applied with an AND to the flags register after instruction execution to clear any flags left undefined.
 
 An opcode may have a 'reg' field which will be an object of opcode extensions/register specifiers represented by single digit string keys - this is the 'reg' field of the modrm byte.  Certain opcodes may be defined or undefined depending on their register specifier or opcode extension. Therefore, each entry within this 'reg' object will have the same fields as a top-level opcode object. 
 
