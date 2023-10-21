@@ -1,2 +1,11 @@
 # Avoid macOS metadata.
 .DS_Store
+
+# Remove test dev tooling
+/tools/check_disasm.py
+/tools/*.csv
+
+# 8088 Test Suite development files
+/8088/v1/*.json
+/8088/v1/decomp/*
+/8088/v1/processed/*
