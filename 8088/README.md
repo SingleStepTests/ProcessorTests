@@ -122,12 +122,14 @@ Sample test:
         ["A", 264920, "--", "---", "---", 0, "MEMW", "T1", "-", 0],
         ["-", 264920, "DS", "-A-", "---", 0, "MEMW", "T2", "-", 0],
         ["-", 264920, "DS", "-AW", "---", 108, "PASV", "T3", "-", 0]
-    ]
+    ],
+    "test_hash": "bc53350157b190cbb5f7e6005f2b881ffc8c501923a6220a0c366879c0333c10"
 }
 ```
 The 'name' field is a user-readable disassembly of the instruction.
 The 'bytes' list contains the instruction bytes that make up the full instruction. They are provided for convenience only.
 The 'initial' and 'final' keys contain the register, memory and queue states before and after instruction execution, respectively.
+The 'test_hash' key is a SHA256 hash of the test json. It should uniquely identify any test in the suite.
 The 'cycles' list contains sub lists, each corresponding to a single CPU cycle. Each contains several fields. From left to right, the cycle fields are:  
 
  - ALE line

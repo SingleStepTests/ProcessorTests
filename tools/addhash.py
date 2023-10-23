@@ -46,7 +46,7 @@ def process_directory(dir_path):
                 # Add 'test_hash' key to each test object
                 for idx, test_obj in enumerate(test_data):
                     test_obj['test_hash'] = hash_json_object(test_obj)
-                    test_obj['test_num'] = idx
+                    #test_obj['test_num'] = idx
 
                 # Save the updated data back to the file
                 with open(file_to_process, 'w') as f_out:
