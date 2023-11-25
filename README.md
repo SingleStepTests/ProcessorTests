@@ -15,9 +15,9 @@ To generate each test set, an implementation is used that:
 * passes all other published test sets; and
 * has been verified by usage in an emulated machine.
 
-Human fallibility means that some discrepancies may still remain so all test sets are manually versioned, into v1, v2, etc, and notes on known discrepancies in the previous sets will be added when updates are published. This should cause the useful test quantity to grow over time, as well as hand-waving away any potential issues over the long term with repeatable random generation.
+In addition to the standard Git history, test sets are manually versioned to permit for potential future breaking changes in JSON format.
 
-As a corollary: please report any discrepancies uncovered, either as an issue or via a correcting pull request.
+Please report any discrepancies uncovered, either as an issue or via a correcting pull request.
 
 ## Other Test Sets
 
