@@ -1,3 +1,6 @@
+## v1.1.1 1/7/2023
+ - Fixed incorrect final register state in some tests within F6.7
+
 ## v1.1.0 10/21/2023
  - Improved disassembler; validated disassembly against iced-x86
  - Added test hashes
