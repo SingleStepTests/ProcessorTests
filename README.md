@@ -1,3 +1,5 @@
+This repository is in the process of being subdivided by test set and will subsequently be marked as archived; please watch https://github.com/orgs/SingleStepTests/repositories for progress.
+
 # ProcessorTests
 
 This repository contains tests for a variety of processors, provided as an aid to reimplementation.
