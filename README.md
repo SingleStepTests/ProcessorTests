@@ -1,4 +1,7 @@
-This repository is in the process of being subdivided by test set and will subsequently be marked as archived; please watch https://github.com/orgs/SingleStepTests/repositories for progress.
+**This repository is archived, having been subdivided by test set. See https://github.com/orgs/SingleStepTests/ for its continuation.**
+
+---
+Previous README:
 
 # ProcessorTests
 
